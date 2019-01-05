@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BD1E4372B324AE3ECB23B97A /* Pods_Todoey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0048DE45BFDF1A9DAA0F0289 /* Pods_Todoey.framework */; };
 		EC218D0C21DFAD4B0002685B /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC218D0B21DFAD4B0002685B /* CategoryTableViewController.swift */; };
+		ECCAB47A21E10E3F00BC5C4A /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCAB47921E10E3F00BC5C4A /* SwipeTableViewController.swift */; };
 		ECE8184421DE8E4100D93011 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE8184321DE8E4100D93011 /* AppDelegate.swift */; };
 		ECE8184621DE8E4100D93011 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE8184521DE8E4100D93011 /* ToDoListViewController.swift */; };
 		ECE8184921DE8E4100D93011 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE8184721DE8E4100D93011 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		5AEF2FE7642CA0765EB2ABAC /* Pods-Todoey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoey.release.xcconfig"; path = "Pods/Target Support Files/Pods-Todoey/Pods-Todoey.release.xcconfig"; sourceTree = "<group>"; };
 		87723D2770B0326C4201A805 /* Pods-Todoey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Todoey/Pods-Todoey.debug.xcconfig"; sourceTree = "<group>"; };
 		EC218D0B21DFAD4B0002685B /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		ECCAB47921E10E3F00BC5C4A /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		ECE8184021DE8E4100D93011 /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE8184321DE8E4100D93011 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECE8184521DE8E4100D93011 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				EC218D0B21DFAD4B0002685B /* CategoryTableViewController.swift */,
+				ECCAB47921E10E3F00BC5C4A /* SwipeTableViewController.swift */,
 				ECE8184521DE8E4100D93011 /* ToDoListViewController.swift */,
 			);
 			path = Controllers;
@@ -229,15 +232,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Todoey/Pods-Todoey-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -255,6 +262,7 @@
 				ECE8184621DE8E4100D93011 /* ToDoListViewController.swift in Sources */,
 				ECE8184421DE8E4100D93011 /* AppDelegate.swift in Sources */,
 				EC218D0C21DFAD4B0002685B /* CategoryTableViewController.swift in Sources */,
+				ECCAB47A21E10E3F00BC5C4A /* SwipeTableViewController.swift in Sources */,
 				ECFC34CC21DFF99E001C5C76 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
